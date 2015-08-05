@@ -1,0 +1,17 @@
+.module-city-6{
+  @extend .module-city-5;
+
+  h2{
+    font-size: 100px;
+  }
+  p{
+    font-size: 40px;
+    font-family: "flama-condensed-semibold";
+  }
+  h2,p{
+    //opacity: 1;
+    text-align: center;
+    color:#fff;
+  }
+
+}

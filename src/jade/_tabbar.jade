@@ -1,0 +1,30 @@
+-var activeCity = isActiveCity ? "active":""
+-var activeSprot = isActiveSprot ? "active":""
+-var activeTouring = isActiveTouring ? "active":""
+-var activePerformance = isActivePerformance ? "active":""
+.tabbar-container(tabbar)
+  .tabbar-wrapper.collision
+    .tabbar.collision-reposition(data-position-top='80', style='top: 0px;')
+      .container
+        .row
+          .col-sm-3.col-xs-12
+            a.city(data-action-name='faster', href='index.html' class="#{activeCity}")
+              span
+                | City
+              i.fa.fa-chevron-down
+          .col-sm-3.col-xs-12
+            a.sport(data-action-name='smarter', href='sport.html'  class="#{activeSprot}")
+              span
+                | Sport
+              i.fa.fa-chevron-down
+          .col-sm-3.col-xs-12
+            a.touring(data-action-name='easier', href='touring.html' class="#{activeTouring}")
+              span
+                | Touring
+              i.fa.fa-chevron-down
+          .col-sm-3.col-xs-12
+            a.performance(data-action-name='customize', href='performance.html' class="#{activePerformance}")
+              span
+                | Performance
+              i.fa.fa-chevron-down
+    i.fa.fa-times.close-icon

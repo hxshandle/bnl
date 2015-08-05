@@ -1,0 +1,32 @@
+{
+  "name": "bnl",
+  "version": "0.0.0",
+  "authors": [
+    "hxshandle <handle.huang0409@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gsap": "~1.17.0",
+    "scrollmagic": "~2.0.5",
+    "animate.css": "~3.3.0",
+    "modernizr": "~2.8.3",
+    "bootstrap": "~3.3.5",
+    "lodash": "~3.10.0",
+    "fontawesome": "~4.3.0",
+    "slick-carousel": "~1.5.7"
+  }
+}

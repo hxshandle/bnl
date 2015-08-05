@@ -1,0 +1,38 @@
+.contact-us-main{
+  font-size: 16px;
+  color: #323237;
+  padding-top: 90px;
+
+  .t1,.t2,.t3{
+    margin: 8px 0;
+  }
+  .t4{
+    font-size: 12px;
+    margin-top: 40px;
+  }
+
+  form{
+    .form-input{
+      padding: 15px 0;
+    }
+    label{
+      display: block;
+    }
+    input{
+      width: 100%;
+    }
+    button{
+      background-color: #fff;
+      border: 1px solid #323237;
+      border-radius: 18px;
+      padding: 4px 10px;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+  .cp{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
+}

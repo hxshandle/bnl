@@ -1,0 +1,29 @@
+- var menuList = [["Home", "首页","index.html"], ["City", "城市","index.html"], ["Sport", "运动","sport.html"], ["Touring", "旅行","touring.html"], ["Performance", "性能","performance.html"], ["About us", "关于我们","about_us.html"], ["Products", "产品","products.html"], ["Press", "出版","press.html"], ["Contact us", "联系我们","contact_us.html"] ]
+
+mixin menuitem(item)
+  li.nav-item
+    a.item.en(href="#{item[2]}") #{item[0]}
+    a.item.zh(href="#{item[2]}") #{item[1]}
+
+header#site-header.row
+  .col-sm-12
+    img.band(src="image/menu-band.png")
+    .right-menu
+      a.menu-icon(href="#")
+        i.fa.fa-bars
+        i.fa.fa-times
+      a.menu-tmall(href="#")
+        img(src="image/tmall-icon.png")
+a#heaer-nav-close.fa.fa-times
+ul.header-nav
+  each item in menuList
+    +menuitem(item)
+  li.share
+    a.social-link(href="tmall")
+      img(src="image/share-tmall.png")
+    a.social-link(href="tmall")
+      img(src="image/share-weibo.png")
+    a.social-link(href="tmall")
+      img(src="image/share-wechat.png")
+  li.customize
+    a.customize-link(href="customerlization") BCB私人定制

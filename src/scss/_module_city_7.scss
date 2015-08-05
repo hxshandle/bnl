@@ -1,0 +1,39 @@
+@include max767 {
+  .module-smarter-4a-ride-smart{
+    height: auto;
+    width: 100%;
+    section {
+      height:auto;
+    
+      .background-image{
+        height: auto;
+        img{
+          width: auto;
+          height: 360px;
+        }
+      }
+    }
+    .offset-top-xs{
+      padding-top: 350px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+  .module-smarter-4a-ride-smart{
+    section{
+      height: auto;
+    }
+    .container{
+      width: 100%;
+      margin:0;
+      padding:0px;
+
+      .offset-top-xs{
+        padding-top: 600px;
+        text-align: center;
+      }
+    }
+  }
+}

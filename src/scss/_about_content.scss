@@ -1,0 +1,162 @@
+.about-content{
+  margin-bottom:60px;
+  padding-top: 100px;
+  .desc{
+    font-size: 18px;
+    margin-bottom:50px;
+  }
+
+  .time-line{
+    @include max767 {
+      &{
+        display: none;
+      }
+    }
+    position: relative;
+    width: 100%;
+    height: 88px;
+    background:url(../image/about_us_timeline_bg.png) repeat-x center;
+    %arrow{
+      position: absolute;
+      width: 54px;
+      height: 88px;
+      cursor: pointer;
+    }
+    .prev{
+      @extend %arrow;
+      left: 100px;
+      background:url(../image/about_us_left_arrow.png) no-repeat;
+    }
+    .next{
+      @extend %arrow;
+      right: 100px;
+      background:url(../image/about_us_right_arrow.png) no-repeat;
+    }
+    .cycle-point{
+      display: inline-block;
+      position: relative;
+      top:40%;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #0069d2;
+      border-radius: 5px;
+      background: #fff;
+      &.active{
+        background:#0069d2;
+        .year{
+          font-size: 32px;
+          top: -48px;
+        }
+      }
+      .year{
+        position: absolute;
+        left: -21px;
+        top: -41px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  @include max767 {
+    .time-line-sliders-wrapper{
+      margin-bottom:60px;
+    }
+  }
+
+  .time-line-sliders{
+      .pod{
+        text-align: center;
+        img{
+          margin-top:10px;
+          @include max767 {
+            width: 100%;
+          }
+        }
+        &:focus{
+          outline: none;
+        }
+        h3{
+          font-size:40px;
+          margin-bottom: 0px;
+          display: none;
+        }
+        p{
+          font-size:16px;
+          margin-top: 10px;
+          font-size: 18px;
+          text-align: left;
+          margin-bottom:0px;
+        }
+      }
+
+    }
+}
+
+.about-section-2{
+  background:#2f2e34;
+  color:#fff;
+  padding:100px 0;
+  .title{
+    font-size: 32px;
+  }
+  .nav{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 285px;
+    @include max767 {
+      &{
+        position: relative;
+      }
+    }
+    a{
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 18px;
+      color: #fff;
+      margin: 0 10px;
+      opacity: 0.6;
+      &:hover,&.active{
+        opacity: 1;
+      }
+    }
+  }
+  .image-show{
+    img{
+      width: 100%;
+    }
+  }
+  .news-pod{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
+
+.about-section-3{
+  background:url(../image/city-view-bg.jpg) no-repeat 0 top;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+// 动画
+.animate-1{
+  opacity: 0;
+  margin-top: 50px;
+}
+
+.animate-2{
+  opacity: 0;
+  margin-top: 50px;
+}
+.animate-3{
+  opacity: 0;
+  margin-top: 50px;
+}
+
+.animate-4{
+  margin-top: 100px;
+  opacity: 0;
+}

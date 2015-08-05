@@ -1,0 +1,41 @@
+mixin newsPod()
+  li.news-item
+    .date 中国|2014年6月10日
+    .right
+      img(src="image/city-view-bg-fallback.jpg")
+    .left
+      .title 2014年度中国摩托车十大车型——贝纳利蓝宝龙BJ300GS
+      .desc 蓝宝龙BJ300GS可谓是2014年度中国车坛惊世骇俗之作，是贝纳利品牌既黄龙600四缸车型之后的又一款极具竞争力的中排量街车。倒置减震、浮动碟刹盘、双梁车架、后平叉、摇臂等大排部件一应俱全，于细节透
+      a.more(href="press_detail.html") 查看详情 >
+    
+    .clearfix
+
+.press-content
+  .container
+    .row.animate-1
+      .col-md-2.col-md-offset-1.left-nav
+        a.news.active NEWS
+        a.image-gallery Image Gallery
+      .col-md-8
+        ul.news-list
+          +newsPod
+          +newsPod
+          +newsPod
+          +newsPod
+          +newsPod
+    .row.page-nav
+      .col-md-8.col-md-offset-3
+        #page-nav.wrapper-dropdown.dropdown--lrsm
+          .dropdown-header
+            span.choice Page 1
+            i.fa.fa-chevron-down.icon-arrow-down
+          ul.dropdown
+            li
+              a(href='/tw')
+                span.xingothic-w8 Page 1
+            li
+              a(href='/smartscooter/faster')
+                span.graphik-semibold Page 2
+            li
+              a(href='/tw/en')
+                span.graphik-semibold Page 3

@@ -1,0 +1,25 @@
+mixin ipt(label)
+  .form-input
+    - var title = label[0].toUpperCase() + label.substr(1)
+    label(for="ipt-#{label}") #{title}
+    input(type="text" name="ipt-#{label}")
+
+.contact-us-main
+  .container
+    .row.animate-1
+      .col-md-6.col-md-offset-3
+        .t1 Add:Strada della Fornace Vecchia 3,61100 Pesaro,ltaly
+        .t2 Tel:+390721  418721 / Fax:+390721 418722
+        .t3 E-mail:support@benelli.com
+        .t4 We love to hear from you. Please complete the form below for media, career, or business partnership related topics.
+
+        form
+          +ipt("name")
+          +ipt("tel")
+          +ipt("email")
+          +ipt("company")
+          +ipt("subject")
+          +ipt("message")
+          button.submit SEND
+        .cp Contact us directly: contact@bennelli.com
+

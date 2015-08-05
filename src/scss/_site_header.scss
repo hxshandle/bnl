@@ -1,0 +1,171 @@
+.sub-page{
+  #site-header{
+    position: static;
+  }
+}
+
+#site-header{
+  position: fixed;
+  width: 100%;
+  z-index: 900;
+  margin:0px;
+  .band{
+    margin-left:16px;
+  }
+  .right-menu{
+    float:right;
+    transition:all .3s;
+    position: relative;
+    .fa-times{
+      display: none;
+    }
+    &.active{
+      margin-right:320px;
+      .fa-bars{
+        display: none;
+      }
+      .fa-times{
+        display: inline-block;
+      }
+    }
+
+    a{
+      font-size:28px;
+      color:#333;
+      margin:0 10px;
+    }
+
+    .menu-tmall{
+      img{
+        margin-top:-7px;
+      }
+    }
+  }
+
+
+}
+
+#heaer-nav-close{
+  display: none;
+}
+
+@include max480() {
+  #site-header{
+
+    .band,.menu-tmall{
+      display: none;
+    }
+
+    .right-menu{
+      &.active{
+        z-index: 900;
+        margin-right:0px;
+      }
+    }
+
+    
+  }
+
+  .header-nav.active{
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom:0px;
+    width: 100%;
+
+    .nav-item{
+      a{
+        line-height:1.5em;
+      }
+    }
+  }
+  #heaer-nav-close{
+    &.active{
+      display: inline-block;
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      color: #323237;
+      font-size: 24px;
+      z-index: 10000;
+    }
+  }
+}
+
+@include max767 {
+  #site-header {
+    position: static;
+  }
+}
+
+.header-nav{
+  position: fixed;
+  right: -380px;
+  width:380px;
+  height: 100%;
+  background:#00d7ff;
+  transition:all .3s;
+  padding-left:80px;
+  padding-top:50px;
+  transition:all .3s;
+  z-index: 900;
+  &.active{
+    right:0px;
+    top:0px;
+  }
+
+  .nav-item{
+    .zh{
+      display: none;
+    }
+    a{
+      font-size:24px;
+      color:#323237;
+      text-decoration: none;
+      line-height:1.8em;
+    }
+    &:hover{
+      a{
+        color:#fff;
+      }
+      .en{
+        display: none;
+      }
+      .zh{
+        display: block;
+      }
+    }
+  }
+  .share{
+    padding:30px 0;
+    .social-link{
+      margin-right:20px;
+      img{
+        transition:all .3s;
+      }
+      &:hover{
+        img{
+
+          transform:scale(1.2);
+        }
+        
+      }
+    }
+  }
+  .customize{
+    a{
+      display: inline-block;
+      background-color: yellow;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+      transition:all .3s;
+      &:hover{
+        transform:scale(1.1);
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+      }
+    }
+  }
+}

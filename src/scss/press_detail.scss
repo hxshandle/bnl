@@ -1,0 +1,125 @@
+
+@import "mixin";
+@import "global";
+@import "_site_header";
+@import "_sub_header";
+@import "_from_demo";
+@import "_site_footer";
+
+
+.press-detail-content{
+  padding-top: 80px;
+  .left-nav{
+    a{
+      font-size: 16px;
+      text-decoration: none;
+      color:#323237;
+      cursor: pointer;
+      display: block;
+      &:hover,&.active{
+        background:#f1f3f3;
+      }
+    }
+  }
+
+  .news-content{
+    width: 100%;
+
+    .title{
+      font-size: 32px;
+      padding: 30px 0;
+      font-weight: bold;
+      font-family: "Microsoft YaHei";
+      @include max767 {
+        font-size: 24px;
+        padding: 20px 0;
+      }
+    }
+    p{
+      font-size: 14px;
+      font-family: "Microsoft YaHei";
+    }
+    .image-show{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+      .image-title{
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+
+      }
+    }
+  }
+
+  .actions{
+    margin-bottom:60px;
+    padding-top: 10px;
+    border-top: 2px solid #f1f3f3;
+    @include max767 {
+      text-align: center;
+    }
+    .lnk-back,.lnk-prev,.lnk-next{
+      color:#fff;
+      background:#00d7ff;
+      display: inline-block;
+      margin:0 1px;
+      padding: 0px 20px;
+      font-size: 24px;
+      line-height: 50px;
+      text-decoration: none;
+      opacity: 0.6;
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    .next-news{
+      @extend %link;
+      padding-left: 10px;
+      color: #323237;
+      font-size: 14px;
+      @include max767 {
+        padding: 10px 0;
+        display: block;
+      }
+    }
+
+    .social-icons{
+      text-align: right;
+       @include max767 {
+          &{
+            text-align: center;
+          }
+        }
+      .icon-share{
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-left: 16px;
+        opacity: 0.6;
+        cursor: pointer;
+        &:hover{
+          opacity: 1;
+        }
+        &.tmall-icon{
+          background:url(../image/social-icon-tmall.png) no-repeat;
+        }
+        &.weibo-icon{
+          background:url(../image/social-icon-weibo.png) no-repeat;
+        }
+        &.tt-icon{
+          background:url(../image/social-icon-tt.png) no-repeat;
+        }
+        &.qq-icon{
+          background:url(../image/social-icon-qq.png) no-repeat;
+        }
+        &.wechat-icon{
+          background:url(../image/social-icon-wechat.png) no-repeat;
+        }
+      }
+    }
+  }
+}

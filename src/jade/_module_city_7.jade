@@ -1,0 +1,23 @@
+mixin section(seq,en,zh,p)
+  section.max-height(id="city-7-section-#{seq}") 
+    .container
+      .row.max-height
+        .col-md-6.col-xs-12.max-height
+          .background-image
+            img(src="image/city-7-#{seq}.jpg")
+        .col-md-4.col-md-offset-1.col-sm-10.col-sm-offset-1.col-xs-12.offset-top-xs.max-height
+          .vertical-center-container
+            .vertical-center
+              h2
+                | #{en}
+                span.break #{zh}
+              p
+                | #{p}
+
+
+.module-smarter-4a-ride-smart
+  +section(1,"BRAND","百年工业品牌","EGAN IN 1911, ONE OF THE FIRST TWO ROUNDS CAR MANUFACTURERS IN THE WORLD.EVEN IF THE WAR AND DEPRESSION, AND ALSO CANNOT DESTROY BENELLI CRAFTSMAN SPIRIT.ONE HUNDRED YEARS, THE BENELLI QUALITY IN, THROUGHOUT THE ITALIAN INDUSTRIAL CIVILIZATION OF THE GOOD OLD DAYS.")
+  +section(2,"DESIGN","纯意大利设计","IN ITALY PESARO BENELLI DESIGN CENTER, BRINGS TOGETHER THE BEST DESIGNERS, ITALIAN YOUNG DESIGN CREATIVITY AND LONG BRAND CULTURE IN THE COLLISION, BE MORE PURE AND AMAZING ELEMENT IN ITALY.")
+  +section(3,"PARTS","全球进口配件","NEVER COMPROMISE PARTS PROCUREMENT STANDARDS, MEANS THAT WE SHOULD TAKE MORE ENERGY AND COST TO MAINTAIN THE GLOBAL SUPPLY CHAIN.YES, WHEN TO STICK TO BRAND SOUL, WE CHOOSE TO CHALLENGE THE MARKET, NOT FOR SEEKING PURE ECONOMIC INTERESTS TO THE CHANGE.")
+  +section(4,"PRODUCE","跨国生产基地","COLLECTION MEANS LOCAL MANUFACTURING, PRODUCTION BASE IN CHINA MATURE AND STABLE STAFF TEAM AND IS BROUGHT ABOUT BY THE STRICT QUALITY CONTROL SYSTEM IS STABLE QUALITY PRODUCTS AND EXCELLENT USER EXPERIENCE.")
+  

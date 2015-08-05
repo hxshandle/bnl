@@ -1,0 +1,44 @@
+.module-city-5{
+  @extend %pageSection;
+
+  display: flex;
+  align-items: center;
+
+  h2{
+    text-align: left;
+    font-size: 40px;
+    color:#323237;
+    opacity: 0;
+  }
+  p{
+    text-align: left;
+    font-size: 22px;
+    color:#323237;
+    opacity: 0;
+  }
+
+  @include max767{
+    &{
+      height: 360px;
+
+      h2{
+        font-size: 24px!important;
+      }
+      p{
+        font-size:16px!important;
+      }
+    }
+  }
+}
+
+
+#touring{
+  .module-city-5{
+    .text-center{
+      margin-top: -200px;
+      @include max767 {
+        margin-top: 0px;
+      }
+    }
+  }
+}

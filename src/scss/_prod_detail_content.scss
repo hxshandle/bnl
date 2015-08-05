@@ -1,0 +1,219 @@
+.prod-nav-sitemap{
+  border-bottom:1px solid #d6d6d6;
+  .site-postion{
+    padding-left: 15px;
+    color:#d6d6d6;
+    font-size: 16px;
+    line-height: 50px;
+    float: left;
+  }
+  .detail-nav{
+    float: right;
+    margin-right: -15px;
+    a{
+      font-size: 24px;
+      line-height: 50px;
+      background:#00d7ff;
+      color: #fff;
+      display: inline-block;
+      padding: 0px 20px;
+      cursor: pointer;
+
+      &:first-child{
+        margin-right:4px;
+      }
+      &:hover{
+        background:#0069d2;
+      }
+      &.disabled{
+        background:#e6e5e6!important;
+      }
+    }
+  }
+}
+
+.prod-detail{
+  span.prod-name{
+    padding-left:15px;
+    color:#323237;
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .big-image-show{
+    text-align: center;
+    img{
+      width: 100%;
+    }
+  }
+
+  .prod-thumbs{
+    text-align: center;
+    margin: 30px 0px;
+    .prod-thumb{
+      margin: 0 10px;
+      width: 80px;
+      cursor: pointer;
+      display: inline-block;
+      opacity: 0.6;
+      &:hover,&.active{
+        opacity: 1;
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.prod-detail-description{
+  background:#e6e5e6;
+  padding: 80px 0;
+  color:#323237;
+  .left{
+    text-align: center;
+ 
+    .prod-logo{
+      text-align:center;
+    }
+    .t1{
+      margin-top: 40px;
+      font-size: 24px;
+    }
+    .t2{
+      margin-top:80px;
+      font-size: 24px;
+    }
+    p{
+      text-align: left;
+      font-size: 16px;
+      width: 440px;
+      margin:0 auto;
+      @include max767 {
+        &{
+          width: auto;
+        }
+      }
+    }
+  }
+  .right{
+    @include max767 {
+      &{
+        padding-top: 20px;
+      }
+    }
+    .N3{
+      font-size: 24px;
+    }
+    .N3-1{
+      font-size: 16px;
+    }
+
+    .prod-color-picker{
+      margin-bottom:40px;
+    }
+    .color-title{
+      font-size: 14px;
+    }
+    .color-cycle{
+      margin-left:20px;
+    }
+    .color-cycle-icon{
+      margin:0 4px;
+      display: inline-block;
+      cursor: pointer;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #323237;
+      border-radius:7px;
+    }
+
+    .prod-detail-desc-item{
+      padding: 4px 0;
+      .title{
+        display: inline-block;
+        width: 180px;
+        font-size: 16px;
+        font-weight: bold;
+
+        @include max767 {
+          &{
+            display: block;
+          }
+        }
+      }
+    }
+
+    .thumbnails{
+      width: 100%;
+      .thumb{
+        width: 33%;
+        float: left;
+        padding-right: 10px;
+        padding-bottom:10px;
+        @include max767 {
+          &{
+            width: 50%;
+          }
+        }
+
+        img{
+          width: 100%;
+        }
+      }
+      &:after{
+        content:"";
+        clear:both;;
+      }
+    }
+
+    .social-icons{
+      margin-top: 50px;
+       @include max767 {
+          &{
+            text-align: center;
+          }
+        }
+      .icon-share{
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+        opacity: 0.6;
+        cursor: pointer;
+        &:hover{
+          opacity: 1;
+        }
+        &.tmall-icon{
+          background:url(../image/social-icon-tmall.png) no-repeat;
+        }
+        &.weibo-icon{
+          background:url(../image/social-icon-weibo.png) no-repeat;
+        }
+        &.tt-icon{
+          background:url(../image/social-icon-tt.png) no-repeat;
+        }
+        &.qq-icon{
+          background:url(../image/social-icon-qq.png) no-repeat;
+        }
+        &.wechat-icon{
+          background:url(../image/social-icon-wechat.png) no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.red{
+  background:red;
+}
+.yellow{
+  background: yellow;
+}
+.black{
+  background: black;
+}
+.blue{
+  background:#69abe8;
+}
+

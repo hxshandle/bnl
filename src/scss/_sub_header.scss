@@ -1,0 +1,20 @@
+.sub-page-header{
+  background:#0069d2;
+  h1{
+    color:#fff;
+    font-size: 92px;
+    line-height:225px;
+    text-align: center;
+    font-family: "FlamaLight";
+  }
+}
+@include max767 {
+  .sub-page-header{
+    h1{
+      font-size: 24px;
+      height:100px;
+      line-height: 100px;
+
+    }
+  }
+}

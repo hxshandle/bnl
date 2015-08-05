@@ -1,0 +1,54 @@
+#loading{
+  background:#e5e5e5;
+  overflow: hidden;
+
+  .loading-container{
+    position: relative;
+    width: 395px;
+    margin:0 auto;
+    top: 50%;
+    margin-top: -70px;
+    .bike{
+      position: absolute;
+      left: 127px;
+      top: -5px;
+    }
+    .logo-view{
+      position: relative;
+      clear:both;
+      height: 92px;
+      .progress-icon{
+        position: absolute;
+        height: 100%;
+        width:100%;
+        background-size:cover;
+      }
+      .light{
+        background: url(../image/loading-light.png) no-repeat ;
+      }
+      .dark{
+        background: url(../image/loading-dark.png) no-repeat ;
+      }
+    }
+    .text-img{
+      margin-left: 102px;
+    }
+    .loading-percent{
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+  @include min320() {
+    .loading-container{
+      transform:scale(0.7);
+      margin-left: -30px;
+    }
+  }
+  @include min480() {
+    .loading-container{
+      transform:scale(1);
+      margin-left:auto;
+    }
+  }
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html ng-app="bln">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+    <!--link(rel="stylesheet" href="css/entypo-font.css")-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="bower_components/lodash/lodash.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <title>bnl</title>
+  </head>
+  <body>
+    <div id="performance" class="site-container">
+      <div id="loading" style="display:none" class="page-section">
+        <div class="loading-container"><img src="image/loading-bike.png" class="bike">
+          <div class="logo-view">
+            <div class="dark progress-icon"></div>
+            <div class="light progress-icon"></div>
+          </div><img src="image/loading-text.png" class="text-img">
+          <div class="loading-percent">0</div>
+        </div>
+      </div>
+      <header id="site-header" class="row">
+        <div class="col-sm-12"><img src="image/menu-band.png" class="band">
+          <div class="right-menu"><a href="#" class="menu-icon"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a><a href="#" class="menu-tmall"><img src="image/tmall-icon.png"></a></div>
+        </div>
+      </header><a id="heaer-nav-close" class="fa fa-times"></a>
+      <ul class="header-nav">
+              <li class="nav-item"><a href="index.html" class="item en">Home</a><a href="index.html" class="item zh">首页</a></li>
+              <li class="nav-item"><a href="index.html" class="item en">City</a><a href="index.html" class="item zh">城市</a></li>
+              <li class="nav-item"><a href="sport.html" class="item en">Sport</a><a href="sport.html" class="item zh">运动</a></li>
+              <li class="nav-item"><a href="touring.html" class="item en">Touring</a><a href="touring.html" class="item zh">旅行</a></li>
+              <li class="nav-item"><a href="performance.html" class="item en">Performance</a><a href="performance.html" class="item zh">性能</a></li>
+              <li class="nav-item"><a href="about_us.html" class="item en">About us</a><a href="about_us.html" class="item zh">关于我们</a></li>
+              <li class="nav-item"><a href="products.html" class="item en">Products</a><a href="products.html" class="item zh">产品</a></li>
+              <li class="nav-item"><a href="press.html" class="item en">Press</a><a href="press.html" class="item zh">出版</a></li>
+              <li class="nav-item"><a href="contact_us.html" class="item en">Contact us</a><a href="contact_us.html" class="item zh">联系我们</a></li>
+        <li class="share"><a href="tmall" class="social-link"><img src="image/share-tmall.png"></a><a href="tmall" class="social-link"><img src="image/share-weibo.png"></a><a href="tmall" class="social-link"><img src="image/share-wechat.png"></a></li>
+        <li class="customize"><a href="customerlization" class="customize-link">BCB私人定制</a></li>
+      </ul>
+      <div id="home" class="page-section">
+        <div class="background-image-city"></div>
+        <div class="background-image"></div>
+        <div class="background-image-text"></div>
+        <div id="annimate-tigger"></div>
+      </div>
+      <div tabbar class="tabbar-container">
+        <div class="tabbar-wrapper collision">
+          <div data-position-top="80" style="top: 0px;" class="tabbar collision-reposition">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3 col-xs-12"><a data-action-name="faster" href="index.html" class="city"><span>City</span><i class="fa fa-chevron-down"></i></a></div>
+                <div class="col-sm-3 col-xs-12"><a data-action-name="smarter" href="sport.html" class="sport"><span>Sport</span><i class="fa fa-chevron-down"></i></a></div>
+                <div class="col-sm-3 col-xs-12"><a data-action-name="easier" href="touring.html" class="touring"><span>Touring</span><i class="fa fa-chevron-down"></i></a></div>
+                <div class="col-sm-3 col-xs-12"><a data-action-name="customize" href="performance.html" class="performance active"><span>Performance</span><i class="fa fa-chevron-down"></i></a></div>
+              </div>
+            </div>
+          </div><i class="fa fa-times close-icon"></i>
+        </div>
+      </div>
+      <div ng-controller="moduleFaster2CleanVideoController" class="module-city-2-clean-video ng-scope standard"><a href="#" data-video-src="http://player.youku.com/embed/XMTMwMDYzNzkyNA==" data-video-id="faster-clean-video" class="btn btn-translucent launch-video-modal">Watch Full Video</a><img src="image/performance-view-bg-fallback.jpg" class="fallback"><img src="image/performance-view-bg.jpg" class="standard">
+        <div class="video_hero">
+          <div class="container">
+            <div class="vertical-center-flex">
+              <h2><span class="break">PURE<br>ITALIAN STYLE<br> SINCE 1911</span></h2><a href="#" data-video-src="http://player.youku.com/embed/XMTMwMDYzNzkyNA==" data-video-id="faster-clean-video" class="heroPlayBtn launch-video-modal">
+                <div class="vertical-center-flex">
+                  <div class="playBtnContainer">
+                    <div class="playBtnLayer">
+                      <div>PLAY<br>VIDEO</div>
+                      <div><i class="glyphicon glyphicon-menu-right"></i></div>
+                    </div>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="module-city-3-summary-info module-summary-info ng-scope standard">
+        <div class="container max-height">
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12 slide">
+              <div class="title">Quicker</div>
+              <div class="body">
+                <div class="big">4.2</div>
+                <div class="small">Seconds<br>From<br>0-50<sup>KM/H</sup></div>
+              </div>
+              <div class="description">Always first off the line. <span class="break-sm break-xs">Instant torque delivers full power in a heartbeat.</span></div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 slide">
+              <div class="title">Faster</div>
+              <div class="body">
+                <div class="big">95</div>
+                <div class="small">KM/H<br>Max<br>Speed</div>
+              </div>
+              <div class="description">So fast, you’ll never be left behind. <span class="break-sm break-xs">Fly through the city with effortless speed and control.</span></div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 slide">
+              <div class="title">Cleaner</div>
+              <div class="body">
+                <div class="big">0</div>
+                <div class="small">No<br>Harmful<br>Emissions</div>
+              </div>
+              <div class="description">Pure performance, pollution-free. <span class="break-sm break-xs">Having fun has never been better for the planet.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-bottom: 0px;" class="module-city-4-performance-hero module-image-hero ng-scope standard">
+        <div class="container">
+          <div class="vertical-center-container">
+            <div class="row content-overlay vertical-center">
+              <div class="col-md-12 text-center">
+                <h3>The heart of freedom<span class="break">In silent place static roar</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-src="image/performance-4-bg.jpg" style="background-image: url(image/performance-4-bg.jpg);" class="imgix-fluid imgix-fluid-bg background-image"></div>
+      </div>
+      <div class="module-city-5">
+        <div class="container">
+          <div class="vertical-center-container">
+            <div class="row content-overlay vertical-center">
+              <div class="col-md-5 text-center">
+                <h2>
+                   
+                  The New <span class="break">Standard of </span><span class="break">Performance</span>
+                </h2>
+                <p>Imported pure manual hard leather cushion & the sets South Korea imported samsung lithium battery Brand custom piano lacquer that bake Aviation industrial-grade aluminium alloy frame</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-src="image/performance-5-bg.jpg" style="background-image: url(image/performance-5-bg.jpg);" class="imgix-fluid imgix-fluid-bg background-image"></div>
+      </div>
+      <div class="module-city-6">
+        <div class="container">
+          <div class="vertical-center-container">
+            <div class="row content-overlay vertical-center">
+              <div class="text-center">
+                <h2>
+                   
+                  百年匠心 驭见未来
+                </h2>
+                <p>pure italian style,since 1911.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(image/city-6-bg.jpg);" class="imgix-fluid imgix-fluid-bg background-image"></div>
+      </div>
+      <div class="module-smarter-4a-ride-smart">
+              <section id="city-7-section-1" class="max-height"> 
+                <div class="container">
+                  <div class="row max-height">
+                    <div class="col-md-6 col-xs-12 max-height">
+                      <div class="background-image"><img src="image/city-7-1.jpg"></div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 offset-top-xs max-height">
+                      <div class="vertical-center-container">
+                        <div class="vertical-center">
+                          <h2>BRAND<span class="break">百年工业品牌</span></h2>
+                          <p>EGAN IN 1911, ONE OF THE FIRST TWO ROUNDS CAR MANUFACTURERS IN THE WORLD.EVEN IF THE WAR AND DEPRESSION, AND ALSO CANNOT DESTROY BENELLI CRAFTSMAN SPIRIT.ONE HUNDRED YEARS, THE BENELLI QUALITY IN, THROUGHOUT THE ITALIAN INDUSTRIAL CIVILIZATION OF THE GOOD OLD DAYS.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="city-7-section-2" class="max-height"> 
+                <div class="container">
+                  <div class="row max-height">
+                    <div class="col-md-6 col-xs-12 max-height">
+                      <div class="background-image"><img src="image/city-7-2.jpg"></div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 offset-top-xs max-height">
+                      <div class="vertical-center-container">
+                        <div class="vertical-center">
+                          <h2>DESIGN<span class="break">纯意大利设计</span></h2>
+                          <p>IN ITALY PESARO BENELLI DESIGN CENTER, BRINGS TOGETHER THE BEST DESIGNERS, ITALIAN YOUNG DESIGN CREATIVITY AND LONG BRAND CULTURE IN THE COLLISION, BE MORE PURE AND AMAZING ELEMENT IN ITALY.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="city-7-section-3" class="max-height"> 
+                <div class="container">
+                  <div class="row max-height">
+                    <div class="col-md-6 col-xs-12 max-height">
+                      <div class="background-image"><img src="image/city-7-3.jpg"></div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 offset-top-xs max-height">
+                      <div class="vertical-center-container">
+                        <div class="vertical-center">
+                          <h2>PARTS<span class="break">全球进口配件</span></h2>
+                          <p>NEVER COMPROMISE PARTS PROCUREMENT STANDARDS, MEANS THAT WE SHOULD TAKE MORE ENERGY AND COST TO MAINTAIN THE GLOBAL SUPPLY CHAIN.YES, WHEN TO STICK TO BRAND SOUL, WE CHOOSE TO CHALLENGE THE MARKET, NOT FOR SEEKING PURE ECONOMIC INTERESTS TO THE CHANGE.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="city-7-section-4" class="max-height"> 
+                <div class="container">
+                  <div class="row max-height">
+                    <div class="col-md-6 col-xs-12 max-height">
+                      <div class="background-image"><img src="image/city-7-4.jpg"></div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 offset-top-xs max-height">
+                      <div class="vertical-center-container">
+                        <div class="vertical-center">
+                          <h2>PRODUCE<span class="break">跨国生产基地</span></h2>
+                          <p>COLLECTION MEANS LOCAL MANUFACTURING, PRODUCTION BASE IN CHINA MATURE AND STABLE STAFF TEAM AND IS BROUGHT ABOUT BY THE STRICT QUALITY CONTROL SYSTEM IS STABLE QUALITY PRODUCTS AND EXCELLENT USER EXPERIENCE.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+      </div>
+      <div class="module_city_8">
+        <div class="container">
+          <div class="row max-height">
+            <div class="col-lg-8 col-lg-offset-2"><i class="fa fa-chevron-left visible-md-inline-block visible-lg-inline-block"></i><i class="fa fa-chevron-right visible-md-inline-block visible-lg-inline-block"></i>
+              <div class="time-line">
+                      <div class="pod row">
+                        <div class="col-md-4"><img src="image/city-8-pod.jpg"></div>
+                        <div class="col-md-8">
+                          <h3>1969</h3>
+                          <p>IN JANUARY 2014, AFTER A CAREFUL AGAIN AND AGAIN, LIKE SEVERAL ROUNDS OF CONSULTATIONS, BOEHNER, LITHIUM ELECTRIC BICYCLES IN MAINLAND CHINA SALES LICENSE FINALLY GOT ITALIAN BENELLI Q.J.S RL COMPANY DULY AUTHORIZED. IN APRIL 2014, BOEHNER, LITHIUM ELECTRIC BICYCLE DAY CAT OPENED FLAGSHIP STORE.</p>
+                        </div>
+                      </div>
+                      <div class="pod row">
+                        <div class="col-md-4"><img src="image/city-8-pod.jpg"></div>
+                        <div class="col-md-8">
+                          <h3>1971</h3>
+                          <p>IN JANUARY 2014, AFTER A CAREFUL AGAIN AND AGAIN, LIKE SEVERAL ROUNDS OF CONSULTATIONS, BOEHNER, LITHIUM ELECTRIC BICYCLES IN MAINLAND CHINA SALES LICENSE FINALLY GOT ITALIAN BENELLI Q.J.S RL COMPANY DULY AUTHORIZED. IN APRIL 2014, BOEHNER, LITHIUM ELECTRIC BICYCLE DAY CAT OPENED FLAGSHIP STORE.</p>
+                        </div>
+                      </div>
+                      <div class="pod row">
+                        <div class="col-md-4"><img src="image/city-8-pod.jpg"></div>
+                        <div class="col-md-8">
+                          <h3>1980</h3>
+                          <p>IN JANUARY 2014, AFTER A CAREFUL AGAIN AND AGAIN, LIKE SEVERAL ROUNDS OF CONSULTATIONS, BOEHNER, LITHIUM ELECTRIC BICYCLES IN MAINLAND CHINA SALES LICENSE FINALLY GOT ITALIAN BENELLI Q.J.S RL COMPANY DULY AUTHORIZED. IN APRIL 2014, BOEHNER, LITHIUM ELECTRIC BICYCLE DAY CAT OPENED FLAGSHIP STORE.</p>
+                        </div>
+                      </div>
+                      <div class="pod row">
+                        <div class="col-md-4"><img src="image/city-8-pod.jpg"></div>
+                        <div class="col-md-8">
+                          <h3>1995</h3>
+                          <p>IN JANUARY 2014, AFTER A CAREFUL AGAIN AND AGAIN, LIKE SEVERAL ROUNDS OF CONSULTATIONS, BOEHNER, LITHIUM ELECTRIC BICYCLES IN MAINLAND CHINA SALES LICENSE FINALLY GOT ITALIAN BENELLI Q.J.S RL COMPANY DULY AUTHORIZED. IN APRIL 2014, BOEHNER, LITHIUM ELECTRIC BICYCLE DAY CAT OPENED FLAGSHIP STORE.</p>
+                        </div>
+                      </div>
+                      <div class="pod row">
+                        <div class="col-md-4"><img src="image/city-8-pod.jpg"></div>
+                        <div class="col-md-8">
+                          <h3>2005</h3>
+                          <p>IN JANUARY 2014, AFTER A CAREFUL AGAIN AND AGAIN, LIKE SEVERAL ROUNDS OF CONSULTATIONS, BOEHNER, LITHIUM ELECTRIC BICYCLES IN MAINLAND CHINA SALES LICENSE FINALLY GOT ITALIAN BENELLI Q.J.S RL COMPANY DULY AUTHORIZED. IN APRIL 2014, BOEHNER, LITHIUM ELECTRIC BICYCLE DAY CAT OPENED FLAGSHIP STORE.</p>
+                        </div>
+                      </div>
+                      <div class="pod row">
+                        <div class="col-md-4"><img src="image/city-8-pod.jpg"></div>
+                        <div class="col-md-8">
+                          <h3>2009</h3>
+                          <p>IN JANUARY 2014, AFTER A CAREFUL AGAIN AND AGAIN, LIKE SEVERAL ROUNDS OF CONSULTATIONS, BOEHNER, LITHIUM ELECTRIC BICYCLES IN MAINLAND CHINA SALES LICENSE FINALLY GOT ITALIAN BENELLI Q.J.S RL COMPANY DULY AUTHORIZED. IN APRIL 2014, BOEHNER, LITHIUM ELECTRIC BICYCLE DAY CAT OPENED FLAGSHIP STORE.</p>
+                        </div>
+                      </div>
+                      <div class="pod row">
+                        <div class="col-md-4"><img src="image/city-8-pod.jpg"></div>
+                        <div class="col-md-8">
+                          <h3>2012</h3>
+                          <p>IN JANUARY 2014, AFTER A CAREFUL AGAIN AND AGAIN, LIKE SEVERAL ROUNDS OF CONSULTATIONS, BOEHNER, LITHIUM ELECTRIC BICYCLES IN MAINLAND CHINA SALES LICENSE FINALLY GOT ITALIAN BENELLI Q.J.S RL COMPANY DULY AUTHORIZED. IN APRIL 2014, BOEHNER, LITHIUM ELECTRIC BICYCLE DAY CAT OPENED FLAGSHIP STORE.</p>
+                        </div>
+                      </div>
+                      <div class="pod row">
+                        <div class="col-md-4"><img src="image/city-8-pod.jpg"></div>
+                        <div class="col-md-8">
+                          <h3>2014</h3>
+                          <p>IN JANUARY 2014, AFTER A CAREFUL AGAIN AND AGAIN, LIKE SEVERAL ROUNDS OF CONSULTATIONS, BOEHNER, LITHIUM ELECTRIC BICYCLES IN MAINLAND CHINA SALES LICENSE FINALLY GOT ITALIAN BENELLI Q.J.S RL COMPANY DULY AUTHORIZED. IN APRIL 2014, BOEHNER, LITHIUM ELECTRIC BICYCLE DAY CAT OPENED FLAGSHIP STORE.</p>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="time-line-wrapper visible-md-block visible-lg-block">
+          <div class="time-line-bg"></div>
+          <div class="year-line"><span id="year-1969" class="year active">1969</span><span id="year-1971" class="year">1971</span><span id="year-1980" class="year">1980</span><span id="year-1995" class="year">1995</span><span id="year-2005" class="year">2005</span><span id="year-2009" class="year">2009</span><span id="year-2012" class="year">2012</span><span id="year-2014" class="year">2014</span></div>
+        </div>
+      </div>
+      <div class="module_city_9">
+        <div class="container">
+          <div class="row animated-9">
+            <div class="col-md-5 col-md-offset-1 col-xs-12 left">
+              <h3>Our Design Ethos:</h3>
+              <h2>Start From Scratch</h2>
+              <div class="cusomter"><a href="#">BCB 私人定制</a></div>
+            </div>
+            <div class="col-md-5 col-xs-12 right">
+              <p>Every part is a first of its kind. Piece by piece, we designed it all from scratch. We believe to reinvent an entire industry everything has to be reimagined.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-sitemap">
+        <div class="container">
+          <div class="row">
+            <div class="links-wrap col-xs-12"><a href="about_us.html">About us</a></div>
+            <div class="links-wrap col-xs-12"><a href="products.html">Products</a></div>
+            <div class="links-wrap col-xs-12"><a href="press.html">Press</a></div>
+            <div class="links-wrap col-xs-12"><a href="contact_us.html">Contact us</a></div>
+            <div class="links-wrap last col-xs-12">
+              <div id="dropdown--i18n" class="wrapper-dropdown dropdown--lrsm">
+                <div class="dropdown-header"><span class="choice">Language</span><i class="fa fa-chevron-down icon-arrow-down"></i></div>
+                <ul class="dropdown">
+                  <li><a href="/tw"><span class="xingothic-w8">台灣 (繁中)</span></a></li>
+                  <li><a href="/smartscooter/faster"><span class="graphik-semibold">Global</span></a></li>
+                  <li><a href="/tw/en"><span class="graphik-semibold">Taiwan (EN)</span></a></li>
+                </ul>
+              </div>
+              <!-- wrapper-dropdown-->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="main-footer">
+        <div class="container">
+          <div class="row animated-footer"> 
+            <div class="col-md-12 action"><a id="keetmeinformed" href="#">KEEP ME INFORMED</a></div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="disclaimer">
+                <p>This web site of the image, data and specifications provided such information is for reference only.Bennelli keep always change bennelli wisdom of variable speed, and other products design and specification of rights.Bennelli also reserves the models and the product sale record the right to change or not and its contents.Any mentioned in this web site data, test results of effective or riding distance, etc., may because of other factors (including but not limited to: personal use habits, knights riding behavior, or people and weight, roads, road speed limit, weather conditions, and the size of the wind speed, etc.) caused by the effect of different results.</p>
+              </div>
+              <div class="logo"><img src="image/foot-logo.png"></div>
+              <div class="copy-right">
+                <p>Copyright © 1911-2015 benelli Inc. All rights reserved. Design:XianXiang</p>
+                <p>浙ICP备10043666号</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script src="bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/jade-runtime.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/_tabbar.js"></script>
+    <script src="js/_loading.js"></script>
+    <script src="js/_site_header.js"></script>
+    <script src="js/_home.js"></script>
+    <script src="js/_module_city_clean_video.js"></script>
+    <script src="js/_module_city_3_summary_info.js"></script>
+    <script src="js/_module_city_4.js"></script>
+    <script src="js/_module_city_5.js"></script>
+    <script src="js/_module_city_6.js"></script>
+    <script src="js/_module_city_7.js"></script>
+    <script src="js/_module_city_8.js"></script>
+    <script src="js/_module_city_9.js"></script>
+    <script src="js/_site_footer.js"></script>
+  </body>
+</html>

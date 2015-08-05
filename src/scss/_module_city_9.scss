@@ -1,0 +1,57 @@
+.module_city_9{
+  position: relative;
+  width: 100%;
+  background:url(../image/city-9-bg.jpg) no-repeat center center;
+  background-size: cover;
+  height: 898px;
+  color: #323237;
+  .animated-9{
+    opacity: 0;
+  }
+  .row{
+    padding-top: 651px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  h2{
+    font-size: 46px;
+    margin: 18px 0;
+  }
+  p{
+    font-size: 16px;
+  }
+  a{
+    display: inline-block;
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: all .3s;
+    &:hover{
+      transform: scale(1.1);
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @include max767 {
+    &{
+      height: 360px;
+      background:#e6e5e6;
+      text-align: center;
+      .row{
+        padding-top: 40px;
+      }
+      h3{
+        font-size: 18px;
+      }
+      h2{
+        font-size: 24px;
+        margin: 18px 0;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+{
+  "name": "static.website.template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/hxshandle/static.website.template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-ruby-sass": "^1.0.5",
+    "http-server": "^0.8.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.0",
+    "lodash": "^3.10.0",
+    "wget": "0.0.1"
+  }
+}

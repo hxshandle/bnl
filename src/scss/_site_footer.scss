@@ -1,0 +1,39 @@
+#main-footer{
+  position: relative;
+  display: block;
+  background-color: #323237;
+  color: #b9bcbf;
+  font-size: 12px;
+  text-align: center;
+  padding: 80px 0;
+
+  #keetmeinformed{
+    display: inline-block;
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: all .3s;
+    font-style: italic;
+    font-weight: 700;
+    &:hover{
+      transform: scale(1.1);
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .disclaimer{
+    p{
+      font-size: 12px;
+    }
+  }
+  .copy-right{
+    margin-top: 20px;
+    p{
+      font-size: 12px;
+      margin:0;
+    }
+  }
+}

@@ -1,0 +1,267 @@
+$colorCity:#0069d2;
+$colorSport:#00c3e5;
+$colorTouring:#24b84c;
+$colorPerformance:#c0df16;
+
+.tabbar-container {
+  position: relative;
+  z-index: 840;
+
+  .tabbar-wrapper {
+    position: relative;
+    background-color: transparent;
+    -webkit-transition: height 150ms ease-out;
+    transition: height 150ms ease-out;
+    z-index: 800;
+
+    .tabbar {
+      background-color: #fff;
+      box-shadow: 0 1px 0 rgba(0,0,0,.05);
+      color: #323237;
+      a{
+        margin: 0 -1px;
+        display: block;
+        font-family: "graphik-light","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 18px;
+        font-size: 1.8rem;
+        text-align: center;
+        color: #323237;
+        padding: 39px 0 37px;
+        border-bottom: 0;
+        overflow: hidden;
+        -webkit-transition: all 200ms ease-out;
+        transition: all 200ms ease-out;
+        -webkit-transition-property: padding,background-color,color;
+        transition-property: padding,background-color,color;
+        white-space: nowrap;
+
+        &.active,&:hover{
+          color: #fff;
+          display: block;
+          text-decoration: none;
+          &.city{
+            background-color: #0069d2;
+            border-left-color: #0069d2;
+            border-right-color: #0069d2;
+          }
+          &.sport{
+            background-color: #00c3e5;
+            border-left-color: #00c3e5;
+            border-right-color: #00c3e5;
+          }
+          &.touring{
+            background-color: #24b84c;
+            border-left-color: #24b84c;
+            border-right-color: #24b84c;
+          }
+          &.performance{
+            background-color: #c0df16;
+            border-left-color: #c0df16;
+            border-right-color: #c0df16;
+          }
+        }
+        i{
+          display: none;
+        }
+      }
+      .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @include min768() {
+          &{width: 750px;}
+          
+        }
+        @include min992() {
+          &{width: 970px;}
+          
+        }
+        @include min1200() {
+          &{width: 1170px;}
+          
+        }
+
+        .row{
+          div{
+            padding: 0px;
+          }
+        }
+      } 
+    }
+
+    &.fixed{
+      .tabbar{
+        position: fixed;
+        width: 100%;
+        margin-top: 55px;
+
+        .row{
+          div{
+            a{
+              padding:12px 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .icon-close {
+      display: block;
+      cursor: pointer;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 22px 17px;
+    }
+  }
+
+  .close-icon{
+    display: none;
+  }
+  @include max767 {
+    &{
+      .tabbar-wrapper{
+        &.fixed{
+          .tabbar{
+            margin-top:0;
+          }
+        }
+        .tabbar{
+          a{
+            display: none;
+            padding: 13px 15px 12px;
+            border: none;
+            &.active{
+              display: block;
+              &.city{
+                background-color: #0069d2;
+                border-left-color: #0069d2;
+                border-right-color: #0069d2;
+              }
+            }
+            span{
+              float:left;
+            }
+            i{
+              float:right;
+              display: inline-block;
+            }
+          }
+          .container{
+            position: relative;
+            //height: 52px;
+            padding: 0;
+
+            .row{
+              margin:0;
+              height: auto;
+
+              .col-xs-12{
+                position: absolute;
+                padding:0;
+              }
+              .col-sm-3{
+                border: none;
+                padding:0;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.cloned{
+      .tabbar-wrapper{
+        .tabbar{
+          .container{
+            .row{
+              .col-xs-12{
+                position: relative;
+              }
+            } 
+          } 
+        } 
+      } 
+    }
+  }
+
+
+  &.cloned{
+    height: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    .tabbar-wrapper{
+      height: 100%;
+      display: table;
+      .tabbar {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        border: none;
+        background-color: transparent;
+        .col-xs-12{
+          position: relative;
+        }
+        a{
+          font-family: "graphik-extra-light","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+          font-weight: 200;
+          font-style: normal;
+          font-size: 42px;
+          font-size: 4.2rem;
+          line-height: 1;
+          color: #fff;
+          background-color: transparent;
+          display: block;
+          text-align: center;
+          border: none;
+          margin: 5px 0;
+          float:none;
+          span{
+            float:none;
+          }
+          i{
+            display: none;
+          }
+        }
+      }
+
+      .close-icon{
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 24px;
+        padding: 22px 17px;
+      }
+    }
+
+    // for color
+    &.city{
+      background:$colorCity;
+    }
+    &.sport{
+      background:$colorSport;
+    }
+    &.touring{
+      background:$colorTouring;
+    }
+    &.performance{
+      background:$colorPerformance;
+    }
+  }
+
+}
+
+

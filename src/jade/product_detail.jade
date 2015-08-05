@@ -1,0 +1,36 @@
+doctype html
+html(ng-app="bln")
+  head
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui")
+    link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet" href="bower_components/animate.css/animate.min.css")
+    link(rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css")
+    link(rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css")
+    link(rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css")
+    //link(rel="stylesheet" href="css/entypo-font.css")
+    link(rel="stylesheet" href="css/product_detail.css")
+    script(src="bower_components/lodash/lodash.min.js")
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="bower_components/modernizr/modernizr.js")
+    title bnl
+  body
+    - var subHeaderName = "PRODUCTS"
+    .site-container.sub-page
+      include _site_header
+      include _sub_header
+      include _prod_detail_content
+      include _site_footer
+
+    script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="bower_components/gsap/src/uncompressed/TweenMax.js")
+    script(src="bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js")
+    script(src="bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js")
+    script(src="bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js")
+    script(src="bower_components/slick-carousel/slick/slick.min.js")
+    script(src="js/jade-runtime.js")
+    script(src="js/main.js")
+    script(src="js/product_detail.js")
+    script(src="js/_site_header.js")
+    script(src="js/_site_footer.js")

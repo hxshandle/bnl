@@ -1,0 +1,64 @@
+doctype html
+html(ng-app="bln")
+  head
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui")
+    link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet" href="bower_components/animate.css/animate.min.css")
+    link(rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css")
+    link(rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css")
+    link(rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css")
+    //link(rel="stylesheet" href="css/entypo-font.css")
+    link(rel="stylesheet" href="css/style.css")
+    script(src="bower_components/lodash/lodash.min.js")
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="bower_components/modernizr/modernizr.js")
+
+    title bnl
+    -var isActiveSprot = true
+    -var videoBG = "image/sport-view-bg.jpg"
+    -var videoBGFallBback = "image/sport-view-bg-fallback.jpg"
+    -var section4BG = "image/sport-4-bg.jpg"
+    -var section4Text1 = "The heart of freedom"
+    -var section4Text2 = "In silent place static roar"
+    -var section5BG = "image/sport-5-bg.jpg"
+
+
+  body
+    .site-container#sport
+      include _loading
+      include _site_header
+      include _home
+      include _tabbar
+      include _module_city_clean_video
+      include _module_city_3_summary_info
+      include _module_city_4
+      include _module_city_5
+      include _module_city_6
+      include _module_city_7
+      include _module_city_8
+      include _module_city_9
+      include _site_footer
+
+    script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="bower_components/gsap/src/uncompressed/TweenMax.js")
+    script(src="bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js")
+    script(src="bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js")
+    script(src="bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js")
+    script(src="bower_components/slick-carousel/slick/slick.min.js")
+    script(src="js/jade-runtime.js")
+    script(src="js/main.js")
+    script(src="js/_tabbar.js")
+    script(src="js/_loading.js")
+    script(src="js/_site_header.js")
+    script(src="js/_home.js")
+    script(src="js/_module_city_clean_video.js")
+    script(src="js/_module_city_3_summary_info.js")
+    script(src="js/_module_city_4.js")
+    script(src="js/_module_city_5.js")
+    script(src="js/_module_city_6.js")
+    script(src="js/_module_city_7.js")
+    script(src="js/_module_city_8.js")
+    script(src="js/_module_city_9.js")
+    script(src="js/_site_footer.js")

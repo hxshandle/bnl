@@ -1,0 +1,114 @@
+@mixin mobileHomeBGText($backgroundImage) {
+  @include max767 {
+    &{
+      background-image:url($backgroundImage);
+      background-size: contain;
+      background-position: 0 top;
+    }
+  }
+  
+}
+
+#home{
+  background:#e2e2e2;
+  text-align: center;
+  height: 800px;
+  @include max767 {
+      height: 360px;
+    }
+
+  %bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    background-position: 50%;
+    position: absolute;
+  }
+  .background-image{
+    @extend %bg;
+    background-image:url(../image/home-bike-bg.png);
+  }
+  .background-image-city{
+    @extend %bg;
+    opacity: 0;
+    background-image:url(../image/home-city-text-bg.png);
+    @include mobileHomeBGText("../image/home-city-text-bg-fallback.png");
+  }
+  .background-image-text{
+    @extend %bg;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 55px;
+    background-image:url(../image/home-bottom-tex-bg.png);
+  }
+
+  #annimate-tigger{
+    position: absolute;
+    top:50%;
+    left: 0px;
+    width: 1px;
+    height: 1px;
+  }
+  .city-text{
+    margin:0 auto;
+    opacity: 0;
+  }
+  .bottom-text{
+    margin-top: 100px;
+    opacity: 0;
+  }
+
+  .city-wrapper{
+    position: absolute;
+    top: 177px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+#sport{
+  #home{
+    .background-image{
+      background-image:url(../image/home-bike-sport-bg.png);
+    }
+    .background-image-city{
+      background-image:url(../image/home-sport-text-bg.png);
+      @include mobileHomeBGText("../image/home-sport-text-bg-fallback.png");
+    }
+  }
+}
+
+
+#touring{
+  #home{
+    .background-image{
+      background-image:url(../image/home-bike-touring-bg.png);
+    }
+    .background-image-city{
+      background-image:url(../image/home-touring-text-bg.png);
+      @include mobileHomeBGText("../image/home-touring-text-bg-fallback.png");
+      
+    }
+  }
+}
+
+#performance{
+  #home{
+    .background-image{
+      background-image:url(../image/home-bike-performance-bg.png);
+    }
+    .background-image-city{
+      background-image:url(../image/home-performance-text-bg.png);
+      @include mobileHomeBGText("../image/home-performance-text-bg-fallback.png");
+    }
+  }
+}

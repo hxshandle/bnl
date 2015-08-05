@@ -1,0 +1,87 @@
+mixin thumb(src,clazz)
+  a.prod-thumb(class="#{clazz}" data-src="#{src}")
+    img(src="#{src}")
+
+mixin bb(title,desc)
+  .prod-detail-desc-item
+    span.title #{title}
+    span.desc #{desc}
+
+mixin tt
+  .thumb
+    img(src="image/prod-detail-thumb.jpg")
+
+.prod-nav-sitemap
+  .container-fluid
+    .row
+      .col-md-12
+        .site-postion
+          span ALL > City
+        .detail-nav
+          a.prod-prev
+            i.fa.fa-chevron-left
+          a.prod-next
+            i.fa.fa-chevron-right
+
+.prod-detail
+  .container-fluid
+    .row
+      .col-md-12
+        span.prod-name CLASSICA 26' LUX
+  .container
+    .row
+      .col-md-8.col-md-offset-2.big-image-show
+        img#big-show(src="image/bike-1.jpg")
+    .row
+      .col-md-12.prod-thumbs
+        +thumb("image/bike-1.jpg",'active')
+        +thumb("image/bike-2.jpg",'')
+        +thumb("image/bike-1.jpg",'')
+        +thumb("image/bike-2.jpg",'')
+
+.prod-detail-description
+  .container-fluid
+    .row.animate-1
+      .col-md-5.left
+        .prod-logo
+          img(src="image/prod-detail-logo.png")
+        .t1 Yu while the mood,Each day is a journey.
+        .t2 CLASSICA
+        p Benelli birth arises at the historic moment in the first lithium electric bicycles, to Benelli vehicles motoleggera in 1922-125 for a cross-border subversion of inspiration.Balance design of the embedded battery a retro import real cowhide hand-made cushion/wrap, imitation of the old classic shock absorption.In the name of "classica", for the Italian designers about the city's romantic imagination and conception of talents, it is a given urban character of fashion sheet is tasted, to reach people in the city traffic light moving good vision, drawing card, yu while the mood, every day is a journey.
+      .col-md-7.col-lg-5.right
+        .prod-entry
+          span.N3 N3
+          span.N3-1 26” / 28”
+        .prod-color-picker
+          span.color-title COLOR OPTION
+          span.color-cycle
+            a.color-cycle-icon.red
+            a.color-cycle-icon.yellow
+            a.color-cycle-icon.black
+            a.color-cycle-icon.blue
+        +bb("Battery","36V 9Ah Samsung Cell Li-ion battery")
+        +bb("Motor","36V 250W,front hud motor")
+        +bb("Displayer","Goccia patent Twist Led Display")
+        +bb("Lamps","“F:Spainning HL2300XB LEDR:Spainning PIXEO XB”")
+        +bb("Fork","Aluminium alloy")
+        +bb("Brakes","Front Tektro V brake & Rear SHIMANO roller brake")
+        +bb("F&R Derailleur","SHIMANO,Nexus,3 speed")
+        +bb("Tyres","KENDA,K193,26x1.5")
+        +bb("Saddle","Gyes,GS-117")
+
+        .thumbnails
+          +tt
+          +tt
+          +tt
+          +tt
+          .clearfix
+        .social-icons
+          a.icon-share.tmall-icon
+          a.icon-share.weibo-icon
+          a.icon-share.tt-icon
+          a.icon-share.qq-icon
+          a.icon-share.wechat-icon
+
+
+
+

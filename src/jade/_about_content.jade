@@ -1,0 +1,61 @@
+mixin pod(year)
+  .pod.row(data-year="#{year}" id="pod-#{year}")
+    .col-md-4
+      img(src="image/city-8-pod.jpg")
+    .col-md-8
+      h3
+        | #{year}
+      p
+        | IN JANUARY 2014, AFTER A CAREFUL AGAIN AND AGAIN, LIKE SEVERAL ROUNDS OF CONSULTATIONS, BOEHNER, LITHIUM ELECTRIC BICYCLES IN MAINLAND CHINA SALES LICENSE FINALLY GOT ITALIAN BENELLI Q.J.S RL COMPANY DULY AUTHORIZED. IN APRIL 2014, BOEHNER, LITHIUM ELECTRIC BICYCLE DAY CAT OPENED FLAGSHIP STORE.
+
+
+mixin pp(id,clazz)
+  .news-pod(id="#{id}" class="#{clazz}")
+    .title Pure Italian design #{id}
+    p n Italy Pesaro Benelli design center, brings together the best designers, Italian young design creativity and long brand culture in the collision, be more pure and amazing element in Italy.
+
+.about-content
+  .container
+    .row
+      .col-md-8.col-md-offset-2.animate-1
+        p.desc
+          | Began in 1911, one of the first two rounds car manufacturers in the world.Even if the war and depression, and also cannot destroy Benelli craftsman spirit.One hundred years, the Benelli quality in, throughout the Italian industrial civilization of the good old days. 
+  .container-fluid.animate-2
+    .row
+      .col-md-12.time-line
+        a.prev
+        a.next
+
+  .container
+    .row
+      .col-md-8.col-md-offset-2.time-line-sliders-wrapper.animate-3
+        .time-line-sliders
+          +pod("1969")
+          +pod("1971")
+          +pod("1980")
+          +pod("1995")
+          +pod("2005")
+          +pod("2009")
+          +pod("2012")
+          +pod("2014")
+
+.about-section-2
+  .container
+    .row
+      .col-md-5.col-md-offset-1.desc.animate-4
+        .pods
+          +pp("brand","")
+          +pp("design","active")
+          +pp("parts","")
+          +pp("produce","")
+        .nav
+          a.pod-nav(data-ref="#brand" data-src="image/city-7-2.jpg") Brand
+          a.pod-nav.active(data-ref="#design" data-src="image/city-7-2.jpg") Design
+          a.pod-nav(data-ref="#parts" data-src="image/city-7-2.jpg") Parts
+          a.pod-nav(data-ref="#produce" data-src="image/city-7-2.jpg") Produce
+      .col-md-5.image-show
+        img#pod-news-image(src="image/city-7-2.jpg")
+
+
+
+

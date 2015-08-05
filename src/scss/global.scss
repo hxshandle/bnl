@@ -1,0 +1,124 @@
+html,body{
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+}
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:active,a:hover {
+    outline: 0
+}
+ul,li{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.site-container{
+  width:100%;
+  height: 100%;
+  
+  .page-section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.background-image{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-position: 50% 50%;
+}
+
+*{
+  font-family: "graphik-extra-light","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+
+%link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+// font face
+@font-face {
+    font-family: 'graphik-light';
+    src: url("../fonts/graphik/Graphik-Light-Web.eot");
+    src: url("../fonts/graphik/Graphik-Light-Web.eot?#iefix") format("embedded-opentype"),url("../fonts/graphik/Graphik-Light-Web.woff") format("woff"),url("../fonts/graphik/Graphik-Light-Web.ttf") format("truetype"),url("../fonts/graphik/Graphik-Light-Web.svg#graphik-light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: 'graphik-semibold';
+    src: url("../fonts/graphik/Graphik-Semibold-Web.eot");
+    src: url("../fonts/graphik/Graphik-Semibold-Web.eot?#iefix") format("embedded-opentype"),url("../fonts/graphik/Graphik-Semibold-Web.woff") format("woff"),url("../fonts/graphik/Graphik-Semibold-Web.ttf") format("truetype"),url("../fonts/graphik/Graphik-Semibold-Web.svg#graphik-semibold") format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: 'graphik-black-italic';
+    src: url("../fonts/graphik/Graphik-BlackItalic-Web.eot");
+    src: url("../fonts/graphik/Graphik-BlackItalic-Web.eot?#iefix") format("embedded-opentype"),url("../fonts/graphik/Graphik-BlackItalic-Web.woff") format("woff"),url("../fonts/graphik/Graphik-BlackItalic-Web.ttf") format("truetype"),url("../fonts/graphik/Graphik-BlackItalic-Web.svg#graphik-black-italic") format("svg");
+    font-weight: 800;
+    font-style: italic;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: 'flama-condensed-bold';
+    src: url("../fonts/flama/FlamaCondensed-Bold.eot");
+    src: url("../fonts/flama/FlamaCondensed-Bold.eot?#iefix") format("embedded-opentype"),url("../fonts/flama/FlamaCondensed-Bold.woff") format("woff"),url("../fonts/flama/FlamaCondensed-Bold.ttf") format("truetype"),url("../fonts/flama/FlamaCondensed-Bold.svg#flama-condensed-bold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: 'flama-condensed-semibold';
+    src: url("../fonts/flama/FlamaCondensed-Semibold.eot");
+    src: url("../fonts/flama/FlamaCondensed-Semibold.eot?#iefix") format("embedded-opentype"),url("../fonts/flama/FlamaCondensed-Semibold.woff") format("woff"),url("../fonts/flama/FlamaCondensed-Semibold.ttf") format("truetype"),url("../fonts/flama/FlamaCondensed-Semibold.svg#FlamaCondensed-Semibold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: 'flama-semicondensed-ultralight';
+    src: url("../fonts/flama/FlamaSemicondensed-Ultralight.eot");
+    src: url("../fonts/flama/FlamaSemicondensed-Ultralight.eot?#iefix") format("embedded-opentype"),url("../fonts/flama/FlamaSemicondensed-Ultralight.woff") format("woff"),url("../fonts/flama/FlamaSemicondensed-Ultralight.ttf") format("truetype"),url("../fonts/flama/FlamaSemicondensed-Ultralight.svg#flama-semicondensed-ultralight") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+  font-family: 'FlamaLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tangerine'), url('../fonts/HelveticaNeueLTPro/FlamaLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-ThEx33';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tangerine'), url('../fonts/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx33.otf') format('opentype');
+}
+

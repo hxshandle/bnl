@@ -1,0 +1,30 @@
+#city{
+  .module-city-4-performance-hero{
+    h3{
+      font-size: 60px;
+      line-height: 1.1em;
+    }
+  }
+  
+}
+
+#sport,#performance,#touring{
+  .module-city-4-performance-hero{
+    h3{
+      font-size: 60px;
+      color:#00d7ff;
+      line-height: 1.1em;
+
+    }
+  }
+}
+
+@include max767 {
+  #sport,#performance,#touring,#city{
+    .module-city-4-performance-hero{
+      h3{
+        font-size: 24px;
+      }
+    }
+  }
+}

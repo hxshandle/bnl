@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    
+    <title>Gogoro - Introducing the world's first and only Smartscooter™</title>
+
+    <link href="/css/smartscooter/vendor?v=cFOhkhHQStT5SL4RGqWgXmEty9QAwx9Km4Os5xu5ye41" rel="stylesheet"/>
+
+    <link href="/css/smartscooter/partials?v=WOpMfc9ufK0zoT-b4QwkBs16Hk1SQ0v0tCfKxNbrnMw1" rel="stylesheet"/>
+
+    <link href="/css/smartscooter?v=jovcGYCezyUkQrqidhmDDuq0aK47CtdJk3U1PLtoqqY1" rel="stylesheet"/>
+
+    <link href="/css/smartscooter/common?v=RsQpoHB4rT2YunzPHw5Ng-1z5priOHbT1L-rfsf6Vu01" rel="stylesheet"/>
+
+    <link href="/css/globals?v=6_lHla1harB9WlNK9StwsmFiMhrPEkq8LV8sSqbqQtw1" rel="stylesheet"/>
+
+
+    
+
+    <!-- modernizr:js -->
+    <script src="/Scripts/vendor/modernizr/modernizr.min.js"></script>
+    <!-- endinject -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+      <script src="/js/respond.js"></script>
+    <![endif]-->
+    <!-- justfont:js -->
+    <script type="text/javascript">var _jf = _jf || []; _jf.push(['p', '31270']); _jf.push(['_setFont', 'xingothic-tc-w8', 'css', '.xingothic-w8']); _jf.push(['_setFont', 'xingothic-tc-w8', 'alias', 'xingothic-w8']); _jf.push(['_setFont', 'xingothic-tc-w3', 'css', '.xingothic-w3']); _jf.push(['_setFont', 'xingothic-tc-w3', 'alias', 'xingothic-w3']); _jf.push(['_setFont', 'sourcehansans-tc-extralight', 'css', '.sourcehansans-extralight']); _jf.push(['_setFont', 'sourcehansans-tc-extralight', 'alias', 'sourcehansans-extralight']); _jf.push(['_setFont', 'sourcehansans-tc-heavy', 'css', '.sourcehansans-heavy']); _jf.push(['_setFont', 'sourcehansans-tc-heavy', 'alias', 'sourcehansans-heavy']); (function (f, q, c, h, e, i, r, d) { var k = f._jf; if (k.constructor === Object) { return } var l, t = q.getElementsByTagName("html")[0], a = function (u) { for (var v in k) { if (k[v][0] == u) { if (false === k[v][1].call(k)) { break } } } }, j = /\S+/g, o = /[\t\r\n\f]/g, b = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, g = "".trim, s = g && !g.call("\uFEFF\xA0") ? function (u) { return u == null ? "" : g.call(u) } : function (u) { return u == null ? "" : (u + "").replace(b, "") }, m = function (y) { var w, z, v, u, x = typeof y === "string" && y; if (x) { w = (y || "").match(j) || []; z = t[c] ? (" " + t[c] + " ").replace(o, " ") : " "; if (z) { u = 0; while ((v = w[u++])) { if (z.indexOf(" " + v + " ") < 0) { z += v + " " } } t[c] = s(z) } } }, p = function (y) { var w, z, v, u, x = arguments.length === 0 || typeof y === "string" && y; if (x) { w = (y || "").match(j) || []; z = t[c] ? (" " + t[c] + " ").replace(o, " ") : ""; if (z) { u = 0; while ((v = w[u++])) { while (z.indexOf(" " + v + " ") >= 0) { z = z.replace(" " + v + " ", " ") } } t[c] = y ? s(z) : "" } } }, n; k.push(["_eventActived", function () { p(h); m(e) }]); k.push(["_eventInactived", function () { p(h); m(i) }]); k.addScript = n = function (u, A, w, C, E, B) { E = E || function () { }; B = B || function () { }; var x = q.createElement("script"), z = q.getElementsByTagName("script")[0], v, y = false, D = function () { x.src = ""; x.onerror = x.onload = x.onreadystatechange = null; x.parentNode.removeChild(x); x = null; a("_eventInactived"); B() }; if (C) { v = setTimeout(function () { D() }, C) } x.type = A || "text/javascript"; x.async = w; x.onload = x.onreadystatechange = function (G, F) { if (!y && (!x.readyState || /loaded|complete/.test(x.readyState))) { y = true; if (C) { clearTimeout(v) } x.src = ""; x.onerror = x.onload = x.onreadystatechange = null; x.parentNode.removeChild(x); x = null; if (!F) { setTimeout(function () { E() }, 200) } } }; x.onerror = function (H, G, F) { if (C) { clearTimeout(v) } D(); return true }; x.src = u; z.parentNode.insertBefore(x, z) }; a("_eventPreload"); m(h); n(r, "text/javascript", false, 3000) })(this, this.document, "className", "jf-loading", "jf-active", "jf-inactive", "//d3gc6cgx8oosp4.cloudfront.net/js/stable/v/4.8/id/138624017765");</script>
+    <!-- end:justfont:js -->
+    <script type="text/javascript">
+        var gogoro = gogoro || {};
+        gogoro.Locale = gogoro.Locale || {};
+        gogoro.Locale.lang = 'en';
+    </script>
+</head>
+
+<body ng-app="gogoro" ng-controller="AppController" class="intro-takeover">
+
+    <!--[if lt IE 11]>
+      <div id="ie-upgrade-box">
+    <div class="ie-upgrade-box-content">
+        <h2>Please upgrade your browser</h2>
+        <div class="ie-upgrade-box-body">
+            <p>
+                We recommend that you use either Google Chrome or the latest version of Mozilla Firefox for optimal performance with gogoro.com. Although gogoro.com will work in most browsers, your experience will be limited and may experience issues if using older versions, such as Internet Explorer 10 and earlier.
+            </p>
+            <p> Just click on the icons to get to the download page.</p>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.google.com/chrome/browser/desktop/">
+                        <i class="browser browser--chrome"></i>
+                        Chrome
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.mozilla.org/en-US/firefox/new/">
+                        <i class="browser browser--firefox"></i>
+                        FireFox
+                    </a>
+                </li>
+                <li class="last">
+                    <a target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <i class="browser browser--ie11"></i>
+                        IE11
+                    </a>
+                </li>
+            </ul>
+            <a href="#" id="btn-close-ie-alert-box" class="btn btn-outline">Continue anyway</a>
+        </div>
+    </div>
+</div>
+
+
+    <![endif]-->
+    <!-- START Loading -->
+    <div id="sprite-loading-wrap" style="display:none;opacity:0">
+        <div class="sprite-loading-content">
+            <div id="sprite-image" class="sprite-image"></div>
+        </div>
+    </div>
+    <!-- END Loading -->
+    
+    <div class="navbar-main" tabindex="-1">
+    <div class="navbar-container">
+        <div class="navbar-items">
+            <ul class="nav navbar-nav navbar-primary" data-current-action="">
+               
+                <li>
+                    <a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/faster">Smartscooter&trade;</a>
+                </li>
+                <li>
+                    <a href="{{$root.gogoro.wwwGogoroUrl}}gostation" data-action-name="smarter">GoStation®</a>
+                </li>
+                <li>
+                    <a href="{{$root.gogoro.wwwGogoroUrl}}faq" data-action-name="easier">FAQ</a>
+                </li>
+        
+            </ul>
+            
+
+        </div>
+    </div>
+    <!--/.container -->
+</div>
+<!--/.nav-main -->
+
+    <div id="site-container" data-page-id="pg-home">
+
+        <header id="main-header">
+            <div class="navbar navbar-default-gogoro" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-target=".navbar-main">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar icon-bar-one"></span>
+                        <span class="icon-bar icon-bar-two"></span>
+                        <span class="icon-bar icon-bar-three"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/faster">
+                        <img src="//images.gogoroapp.com/gogoro.svg" class="svg gogoro-logo" alt="Gogoro" width="102" height="28" />
+                    </a>
+                    <ul class="main-links">
+                        <li class="hide"><a href="/press">Beta Program</a></li>
+                        <li class="hide"><a href="/book-a-ride">Book a Ride</a></li>
+                        <li><a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/faster"><span class="graphik-light">Smartscooter™</span></a></li>
+                        <li><a href="{{$root.gogoro.wwwGogoroUrl}}gostation"><span class="graphik-light">GoStation®</span></a></li>
+                        <li><a href="{{$root.gogoro.wwwGogoroUrl}}faq"><span class="graphik-light">FAQ</span></a></li>
+                    </ul>
+
+                    <ul class="quick-links clearfix">
+                        <li class="hide"><a href="/press">Beta Program</a></li>
+                      
+                       
+                        
+
+                    </ul>
+
+                </div>
+
+                <div class="navbar-background"></div>
+            </div>
+            <!--/.navbar-default-gogoro -->
+            <div class="nav-bar-stop white">
+                <button type="button" class="close-button" onclick="gogoro.App.removeTakeover();">
+                    <span class="Rotate45deg"></span>
+                    <span class="Rotate45degRev"></span>
+                </button>
+            </div>
+        </header>
+
+        <div id="site-content" class="content">
+            
+
+<div class="pg-error" data-state="error">
+
+    <section class="main-section background-color-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center padding-vertical-100 margin-vertical-100">
+
+                    <h2>Sorry, the page you're looking for isn’t here.</h2>
+
+                </div><!--/.col-md-7 -->
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </section><!--/.main-section -->
+</div>
+
+        </div><!--.site-content-->
+
+        <div id="footer-sitemap">
+            <div class="container">
+                <div class="row">
+
+                    <div class="links-wrap col-xs-12">
+                        <a href='/about'>About us</a>
+                    </div>
+                   
+                    <div class="links-wrap col-xs-12">
+                        <a href='/press'>Press</a>
+                    </div>
+                    <div class="links-wrap col-xs-12">
+                        <a href='/career/'>Career</a>
+                    </div>
+                    <div class="links-wrap col-xs-12">
+                        <a href='/shops'>Retail Shops</a>
+                    </div>
+                  
+                    <div class="links-wrap last col-xs-12">
+
+                        <div id="dropdown--i18n" class="wrapper-dropdown dropdown--lrsm">
+                            <div class="dropdown-header">
+                                <span class="choice">Language</span>
+                                <i class="icon-arrow-down"></i>
+                            </div>
+                            <ul class="dropdown">
+                                <li><a href="/tw"><span class="xingothic-w8">台灣 (繁中)</span></a></li>
+                                <li><a href="/smartscooter/faster"><span class="graphik-semibold">Global</span></a></li>
+                                <li><a href="/tw/en"><span class="graphik-semibold">Taiwan (EN)</span></a></li>
+                            </ul>
+                        </div><!-- wrapper-dropdown -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div><!--#footer-sitemap-->
+
+
+
+        <footer id="main-footer" style="display:none">
+            <div class="container">
+
+                <div class="row">
+                                     <div class="col-md-12">
+                                         <div class="col-md-12 margin-bottom-100" style="text-align:center;" id="footerSocialBar">
+                                             <ul style="">
+                                                 <li>
+                                                     <a href="https://www.facebook.com/Gogoro" target="_blank"><i class="gicon gicon--facebook2"></i></a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="https://www.youtube.com/user/GogoroChannel" target="_blank"><i class="gicon gicon--youtube2"></i></a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="https://www.linkedin.com/company/gogoro" target="_blank"><i class="gicon gicon--linkedin2"></i></a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="https://twitter.com/gogoronews" target="_blank"><i class="gicon gicon--twitter2"></i></a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="/blog"><i class="gicon gicon--blog2"></i></a>
+                                                 </li>
+                                             </ul>
+                                         </div>
+                                         
+                                        
+                                             </div>
+                                         </div>
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                            <div class="disclaimer">
+                                <p>
+                                    Any photos, data and specifications provided on this Site are for reference only. Gogoro reserves the right to make changes at any time to the design and specifications of Gogoro Smartscooter&trade; EV and other products.  Gogoro also reserves the right from time to time to sell or not any specific model and products and make changes to the content set forth here for any model and products.
+                                    Any efficiency data, test results or riding distance mentioned on this Site may vary due to many factors including, without limitation, rider’s riding behaviors or habits, number of rider, rider’s weight, road conditions, speed limit, weather and wind speed.
+                                    With regard to test conditions, please refer to <a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/specs">Gogoro</a> and <a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/specs_plus">Gogoro Plus</a> specification sheets respectively.
+                                </p>
+                            </div>
+                            <p>
+                                <img src="//images.gogoroapp.com/gogoro-tm.png" alt="Gogoro&trade;" width="60" height="14" class="gogoro-logo">
+                            </p>
+                            <p class="margin-0">
+                                Copyright &copy; 2014-2015 Gogoro Inc. All rights reserved.
+                                <br><a href="/terms-of-use/">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/privacy-policy/">Privacy Policy</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /#site-container -->
+        <script src="/js/globals?v=IyHAqL7DhYivp1xoAfuIMCnGoRVBolr2SHcH7cwP10U1"></script>
+
+        <script src="/js/smartscooter/vendor?v=PeqqcwvlLU98hn-wVkBCDILaP2-4HcWRnOaUGcNXjWw1"></script>
+
+        <script src="/js/smartscooter/partials?v=JAVvK2g8TlwYyBmFrQIjymKOoE9puGfkwqpW9HSyCUI1"></script>
+
+        <script src="/js/smartscooter?v=jRCBP_U45JFzhoQidqtGlMO8mKHjOAxC2s2yE_Zzqek1"></script>
+
+        <script src="/js/smartscooter/common?v=3N8uGyd11kwp_Auqb_6YBUfu86FTBf6C-XlpG2KfU2Q1"></script>
+
+        
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-56246096-5', 'gogoro.com');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+        </script>
+
+    </body>
+
+    </html>

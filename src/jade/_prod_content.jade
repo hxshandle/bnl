@@ -1,0 +1,53 @@
+- var menus = ["ALL","CITY","CLASSIC","PERFORMANCE","SPORT","TOURING","URBAN"]
+-var zh = {"ALL":"全部", "CITY":"城市", "CLASSIC":"经典", "PERFORMANCE":"性能", "SPORT":"运动", "TOURING":"旅行", "URBAN":"都市"}
+mixin p(item)
+  if item == "ALL"
+    a.series-menu.active(data-zh="#{zh[item]}" data-en="#{item}" href="#")
+      span #{item}
+      i.fa.fa-chevron-down
+  else
+    a.series-menu(data-zh="#{zh[item]}" data-en="#{item}" href="#")
+      span #{item}
+      i.fa.fa-chevron-down
+
+
+mixin item 
+  .col-md-4.prod-item
+    a.item-link(href="product_detail.html")
+      img(src="image/bike-1.jpg")
+      .desc
+        span LETIZIA 26' STEP
+
+.prod-series-menu
+  .container-fluid
+    .row
+      .col-md-12.menu-list
+        i.fa.fa-times.close-icon
+        each p in menus
+          +p(p)
+
+.container-fluid
+  .row.gallery
+    +item
+    +item
+    +item
+    +item
+    +item
+    +item
+  .row.page-nav
+    #page-nav.wrapper-dropdown.dropdown--lrsm
+      .dropdown-header
+        span.choice Page 1
+        i.fa.fa-chevron-down.icon-arrow-down
+      ul.dropdown
+        li
+          a(href='/tw')
+            span.xingothic-w8 Page 1
+        li
+          a(href='/smartscooter/faster')
+            span.graphik-semibold Page 2
+        li
+          a(href='/tw/en')
+            span.graphik-semibold Page 3
+
+

@@ -1,0 +1,55 @@
+
+@mixin min320() {
+  @media screen and (min-width: 320px) {
+    @content;
+  }
+}
+@mixin min480() {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin min768() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin min992() {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin min1200() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+
+@mixin max767() {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin max480() {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin min768to1199() {
+  @media screen and (min-width: 768px) and(max-width:1199px) {
+    @content;
+  }
+}
+
+
+%pageSection{
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  background-color: #d1d5d4;
+  color: #fff;
+}
